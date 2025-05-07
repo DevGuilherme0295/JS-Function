@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar nome e idade</title>
+</head>
+<body>
+    <input id="nome" type="text">
+    <input id="idade" type="text">
+    <button onclick="mostrarIdade()">Clique aqui</button>
+    <p id="mostra"></p>
+</body>
+<script>
+    function mostrarIdade(){
+        
+        mostra.innerHTML = `Seu nome é ${nome.value}, e você tem ${idade.value} anos`;
+    }
+</script>
+</html>
