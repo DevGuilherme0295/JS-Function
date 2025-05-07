@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nome" type="text">
+    <input id="sobrenome" type="text">
+    <p></p>
+    <button onclick="mostrarNomes()">Clique aqui</button>
+    <p id="resultado"></p>
+
+</body>
+<script>
+    function mostrarNomes(){
+        resultado.innerHTML = `Meu nome completo é: ${nome.value} ${sobrenome.value}`
+    }
+</script>
+</html>
