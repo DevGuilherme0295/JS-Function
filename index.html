@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Calculadora</h1>
+    <input id="n1" type="text">
+    <div id="sinal"></div>
+    <input id="n2" type="text">
+    <p id="resultado"></p>
+    <button onclick="subtracao()">-</button>
+    <button onclick="multiplicacao()">*</button>
+    <button onclick="divisao()">/</button>
+    <button onclick="soma()">+</button>
+</body>
+<script>
+    function soma (){
+        // alert("Você apertou no botão");
+        // titulo.innerHTML = "olá mundo"
+        // console.log(titulo.innerHTML);
+        resultado.innerHTML = Number(n1.value) + Number(n2.value);
+        sinal.innerHTML = "+"
+    }
+
+    function subtracao(){
+        resultado.innerHTML = Number(n1.value) - Number(n2.value);
+        sinal.innerHTML = "-"
+    }
+    function multiplicacao(){
+        resultado.innerHTML = Number(n1.value) * Number(n2.value);
+        sinal.innerHTML = "*"
+    }
+    function divisao(){
+        resultado.innerHTML = Number(n1.value) / Number(n2.value);
+        sinal.innerHTML = "/"
+    }
+</script>
+</html>
