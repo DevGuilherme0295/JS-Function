@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="cidade" type="text">
+    <input id="nome" type="text">
+    <p></p>
+    <button onclick="juntar()">Clique aqui</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    function juntar(){
+        resultado.innerHTML = `Seu nome é ${nome.value}, e ele mora em ${cidade.value}`
+    }
+</script>
+</html>
